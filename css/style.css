@@ -296,115 +296,6 @@ body {
   color: var(--white);
 }
 
-
-/*.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.btn {
-  position: relative;
-  border-radius: 10px;
-  background: var(--gradient);
-  color: var(--secondary);
-  font-size: var(--fs-f8);
-  font-weight: var(--weight-semibold);
-  max-width: 120px;
-  height: 50px;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  padding-inline: 30px;
-  clip-path: var(--clip-path-3);
-}
-
-.btn:hover {
-  transform: scale(1.05);
-  color: var(--white);
-}
-
-.logo img {
-  width: 200px;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
-
-.header {
-  background-color: var(--background);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 25px 12px;
-  z-index: 4;
-}
-
-.header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar-list {
-  display: flex;
-}
-
-.header.active {
-  position: relative;
-  animation: slideUp 1s ease forwards;
-}
-
-@keyframes slideUp {
-  0% {
-    transform: translateY(-100%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.navbar-link {
-  padding: 12px 15px;
-  text-transform: uppercase;
-  font-size: var(--fs-f8);
-  font-weight: var(--weight-semibold);
-  color: var(--neutrals);
-  transition: color 0.3s ease;
-}
-
-.navbar-link:hover {
-  color: var(--secondary);
-}
-
-.search-btn {
-  color: var(--neutrals);
-  font-size: var(--fs-3);
-  border: none;
-  transition: transform 0.2s ease, color 0.3s ease;
-}
-
-.search-btn:hover {
-  transform: scale(1.2);
-  color: var(--secondary);
-}
-
-/*.banner {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  background:url(../img/Story\ confeitaria\ doces\ minimalista\ marrom.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-}*/
-
 /*carrosel*/
 
 body{
@@ -814,185 +705,26 @@ footer .container a:hover {
 
 /*header*/
 
-@media (max-width: 1102px) {
-
-  /*.header .btn,
-  .search-btn {
-      display: none;
-  }*/
-
-  .navbar-list .navbar-link {
-      font-size: 14px;
-  }
-
-  .header .logo img {
-      width: 100px;
-  }
-
-  .container {
-      max-width: 950px;
-  }
-
-  .carrossel-horizontal-box {
-    display: none;
-  }
-
-  .carrossel .banner {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    display: flex;
-    padding-top: 0;
-     margin-top: 20px;
-  }
-  
-  .carrossel .banner img {
-    width: 100%;
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Remove espaços abaixo da imagem */
-    object-fit: cover; /* Preenche o espaço sem distorcer */
-  }
-
-  .footer-top .container-footer {
-      grid-template-columns: repeat(2, 1fr);
-      margin: 0 50px;
-  }
-}
-
 @media (max-width: 992px) {
-
-  .search-bar {
-  display: none;
+  .grid .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
 }
 
-.btn {
-  position: relative;
-  border-radius: 10px;
-  background: var(--gradient);
-  color: var(--secondary);
-  font-size: var(--fs-f8);
-  font-weight: var(--weight-semibold);
-  max-width: 120px;
-  height: 50px;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  padding-inline: 30px;
-  clip-path: var(--clip-path-3);
-  margin-right: 70px;
-}
-
-  .service-list {
-      grid-template-columns: repeat(2, 1fr);
-  }
-
-  .about .container-sobre {
-      /* grid-template-columns: 1fr;*/
-      text-align: center;
-      margin: 0 50px 50px;
-  }
-
-  .galeria {
-      grid-template-columns: repeat(2, 1fr);
-  }
-
-}
-
-@media (max-width: 768px) {
-  .header .navbar {
-      display: none;
-  }
-
-  .nav-toggle-btn {
-      display: flex;
+@media (max-width: 600px) {
+  header {
+    font-size: 1.2rem;
   }
 
   .container {
-      max-width: 600px;
+    padding: 0.5rem;
   }
 
-  .parallax .content {
-      margin: 0 50px;
-      text-align: center;
+  .grid .card {
+    flex: 1 1 100%;
   }
 
-}
-
-@media (max-width: 550px) {
-  
-  .header {
-      padding: 15px 8px;
-  }
-
-  .logo img {
-      width: 150px;
-      height: auto;
-  }
-
-  .banner {
-      height: 700px;
-  }
-
-  .banner video {
-      height: 100%;
-  }
-
-  .btn {
-  position: relative;
-  border-radius: 10px;
-  background: var(--gradient);
-  color: var(--secondary);
-  font-size: var(--fs-f8);
-  font-weight: var(--weight-semibold);
-  max-width: 120px;
-  height: 50px;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  padding-inline: 30px;
-  clip-path: var(--clip-path-3);
-  margin-right: 30px;
-}
-
-  .about .container-sobre {
-      grid-template-columns: 1fr;
-      text-align: center;
-      margin: 0 50px 50px;
-  }
-
-  .service-list {
-      grid-template-columns: 1fr;
-      margin: -20 50px;
-  }
-
-  .galeria {
-      grid-template-columns: 1fr;
-  }
-
-  .sobre-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* 2 colunas */
-  gap: 20px;
-  /* espaço entre os itens */
-  /*max-width: 1200px;*/
-  margin: 0 auto;
-  padding: 40px;
-}
-
-.sobre-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.sobre-grid img:hover {
-  transform: scale(1.3);
-}
-
-  .footer .social-list {
-      justify-content: center;
-
+  body {
+    font-size: 16px;
   }
 }
