@@ -140,112 +140,150 @@ body {
 
 /*HEADER*/
 
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.top-header {
+  border-bottom: 1px solid #ccc;
+}
+
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
 }
 
-.btn {
-    position: relative;
-    background: var(--gradient);
-    color: var(--secondary);
-    font-size: var(--fs-f8);
-    font-weight: var(--weight-semibold);
-    max-width: 120px;
-    height: 50px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    padding-inline: 30px;
-    clip-path: var(--clip-path-3);
-}
-
-.btn:hover {
-    transform: scale(1.05);
-    color: var(--secondary);
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 .logo img {
-    width: 200px;
-    height: auto;
-    object-fit: contain;
-    display: block;
+  height: 100px;
 }
 
-.header {
-    background-color: var(--background);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 25px 12px;
-    z-index: 4;
+.search-bar {
+  flex: 1;
+  display: flex;
+  max-width: 500px;
+  margin: 0 1rem;
+   font-size: var(--fs-8);
 }
 
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.search-bar input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  font-size: 50%;
 }
 
-.navbar-list {
-    display: flex;
+.search-bar button {
+  padding: 5px 16px;
+  background: var(--background);
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.3s ease;
+
 }
 
-.header.active {
-    position: relative;
-    animation: slideUp 1s ease forwards;
+.search-bar {
+  color: var(--neutrals);
+  font-size: var(--fs-3);
+  border: none;
 }
 
-@keyframes slideUp {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
+.search-bar:hover button {
+  color: var(--secondary);
 }
 
-.navbar-link {
-    padding: 12px 15px;
-    text-transform: uppercase;
-    font-size: var(--fs-f8);
-    font-weight: var(--weight-semibold);
-    color: var(--neutrals);
-    transition: color 0.3s ease;
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-.navbar-link:hover {
-    color: var(--secondary);
+.icons i {
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-.search-btn {
-    color: var(--neutrals);
-    font-size: var(--fs-3);
-    border: none;
-    transition: transform 0.2s ease, color 0.3s ease;
+.login-btn {
+  /*border: 1px solid black;*/
+  border-radius: 10px;
+  background: var(--secondary);
+  padding: 6px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--fs-5);
 }
 
-.search-btn:hover {
-    transform: scale(1.2);
-    color: var(--secondary);
+.menu {
+  background:var(--background);
+  padding: 0.5rem 2rem;
+  justify-self: center;
 }
 
-.banner {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    /*background:url(../img/Story\ confeitaria\ doces\ minimalista\ marrom.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;*/
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 24px;
 }
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: var(--fs-f8);
+}
+
+.menu :hover{
+  color: var(--secondary);
+}
+
+.promo-bar {
+  background: #e0e0e0;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  position: relative;
+  border-radius: 10px;
+  background: var(--gradient);
+  color: var(--secondary);
+  font-size: var(--fs-f8);
+  font-weight: var(--weight-semibold);
+  max-width: 120px;
+  height: 50px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 30px;
+  clip-path: var(--clip-path-3);
+  margin-right: 70px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  color: var(--white);
+}
+
 
 .filtro label {
   display: flex;
@@ -261,19 +299,32 @@ body {
   margin: 0;
 }
 
+
+
 /* === SIDEBAR DE FILTROS === */
+
+
 .sidebar {
     width: 250px;
     background-color: var(--white);
     padding: 20px;
     border-radius: var(--radius-5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    height: 1100px;
 }
 
-.sidebar h2, .sidebar h3 {
+.sidebar h2{
     margin-bottom: 10px;
     color: var(--secondary);
     font-size: var(--fs-4);
+}
+
+.sidebar h3 {
+  margin-bottom: 10px;
+    color: var(--secondary);
+    font-size: var(--fs-4);
+    height: 100px;
 }
 
 .sidebar label {
@@ -281,18 +332,20 @@ body {
     color: var(--black);
     margin-bottom: 6px;
     display: block;
-
 }
 
 .filtro input[type="checkbox"] {
   margin: 0;
 }
 
+
 /* SEÇÃO DE PRODUTOS  */
+
 .produtos {
     flex: 1;
     display: flex;
     flex-direction: column;
+    margin-top: -300px;
 }
 
 .ordenar {
@@ -312,7 +365,6 @@ body {
     border-radius: var(--radius-3);
     border: 1px solid var(--neutrals);
     font-size: var(--fs-f8);
-    
 }
 
 /* === GRADE DE PRODUTOS === */
@@ -369,93 +421,93 @@ body {
 /*categoria*/
 
 .card-text2 {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: var(--secondary);
-  /* ou outro que combine com seu tema */
-  font-family: var(--ff-opensans);
-  padding-top: 60px;
-}
-
-.sobre-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* 3 colunas */
-  gap: 20px;
-  /* espaço entre os itens */
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px;
-}
-
-.sobre-grid .item {
-  padding: 16px;
-  text-align: center;
-}
-
-.sobre-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.sobre-grid img:hover {
-  transform: scale(1.2);
-}
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--secondary);
+    /* ou outro que combine com seu tema */
+    font-family: var(--ff-opensans);
+    padding-top: 60px;
+  }
+  
+  .sobre-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas */
+    gap: 20px;
+    /* espaço entre os itens */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  .sobre-grid .item {
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .sobre-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .sobre-grid img:hover {
+    transform: scale(1.2);
+  }
 
 /* Footer */
 footer {
-  background-color: var(--secondary);
-  padding: 40px 0;
-}
-
-footer .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  color: #fff;
-}
-
-footer .container ul {
-  width: 100%;
-  max-width: 250px;
-  margin-bottom: 30px;
-  list-style: none;
-}
-
-footer .container h3 {
-  margin-bottom: 16px;
-  font-weight: 600;
-}
-
-footer .container ul>p {
-  margin-bottom: 30px;
-}
-
-footer .container .redes-social img {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-footer .container li {
-  margin: 10px 0;
-}
-
-footer .container a {
-  color: white;
-  text-decoration: none;
-}
-
-footer .container a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 1102px) {
+    background-color: var(--secondary);
+    padding: 40px 0;
+  }
+  
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+  }
+  
+  footer .container ul {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 30px;
+    list-style: none;
+  }
+  
+  footer .container h3 {
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  
+  footer .container ul>p {
+    margin-bottom: 30px;
+  }
+  
+  footer .container .redes-social img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  footer .container li {
+    margin: 10px 0;
+  }
+  
+  footer .container a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer .container a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 1102px) {
 
     /*.header .btn,
     .search-btn {

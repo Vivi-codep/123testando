@@ -13,18 +13,18 @@
 
   /* COLOR */
   
-    --background: #E7E9EC;
-    --primary: #E7E9EC;
-    --secondary: #FCAD0B;
-    --sucess: #1C9E02;
-    --warning: #FFA006;
-    --danger: #FF002B;
-    --black: #000000;
-    --neutrals: #c7c4c4;
-    --white: #fff;
-    --gradient: linear-gradient(to right top, var(--background), var(--secondary));
-    --gradient-2: linear-gradient(90deg, transparent 0%, #D10023, transparent 100%);
-    --text: var(--neutrals)
+  --background: #E7E9EC;
+  --primary: #E7E9EC;
+  --secondary: #FCAD0B;
+  --sucess: #1C9E02;
+  --warning: #FFA006;
+  --danger: #FF002B;
+  --black: #000000;
+  --neutrals: #c7c4c4;
+  --white: #fff;
+  --gradient: linear-gradient(to right top, var(--secondary), var(--background));
+  --gradient-2: linear-gradient(90deg, transparent 0%, #D10023, transparent 100%);
+  --text: var(--neutrals)
   
     /* TIPOGRAFIA */
   
@@ -196,7 +196,7 @@ body {
 
 .search-bar button {
   padding: 5px 16px;
-  background: var(--background);
+  
   border: 1px solid #ccc;
   border-left: none;
   border-radius: 0 20px 20px 0;
@@ -206,7 +206,7 @@ body {
 }
 
 .search-bar {
-  color: var(--background);
+  color: #ccc;
   font-size: var(--fs-3);
   border: none;
 }
@@ -239,7 +239,6 @@ body {
 }
 
 .menu {
-  background: var(--background);
   padding: 0.5rem 2rem;
   justify-self: center;
 }
@@ -264,7 +263,7 @@ body {
 }
 
 .promo-bar {
-  background: #e0e0e0;
+  background: var(--neutrals);
   text-align: center;
   padding: 0.5rem;
   font-size: 14px;
@@ -293,7 +292,7 @@ body {
 
 .btn:hover {
   transform: scale(1.05);
-  color: var(--white);
+  color: var(--background);
 }
 
 /* Banner */
@@ -321,7 +320,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--backgroun);
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
@@ -435,6 +434,7 @@ body {
 .valores {
     text-align: center;
     padding: 50px;
+  
 }
 
 .valores h2 {
@@ -450,7 +450,7 @@ body {
 
 .card {
     width: 250px;
-    background-color: #f9f9f9;
+    background-color: var(--secondary);
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.5s;
@@ -474,9 +474,7 @@ body {
 .card p {
     color: #555;
 }
-
-/* === NOTÍCIAS PRINCIPAIS E REGIÕES === */
-.noticias-e-regioes {
+.missao{
   display: flex;
   justify-content: center;  
   align-items: flex-start;
@@ -484,71 +482,6 @@ body {
   max-width: 1200px;         
   margin: 0 auto;            
   padding: 20px;
-}
-
-/* Container das notícias, em linha */
-.bloco-noticias {
-  display: flex;
-  gap: 60px;
-}
-
-.bloco-noticia {
-  width: 360px;
-  background-color: var(--Branco);
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: var(--shadow-1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.bloco-noticia:hover {
-  transform: scale(1.1);
-}
-
-
-/* CONTAINER IMAGEM */
-.noticia-imagem {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
-}
-
-/* A imagem */
-.noticia-imagem img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Título dentro da imagem */
-.noticia-titulo {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  margin: 0;
-  color:var(--Branco);
-  font-size: var(--fs-4);
-  font-family: var(--ff-MontaguSlab);
-  text-shadow:var(--shadow-2);
-}
-
-/* Descrição da notícia */
-.noticia-descricao {
-  padding: 30px;
-  font-family:var(--ff-Montserrat);
-  font-weight: var(--weight-regular);
-  font-size: var(--fs-f8);
-  background-color: var(--Verde-floresta);
-  color: var(--Branco);
-  flex-grow: 1; 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 400px;
-
 }
 
 /* Footer */
