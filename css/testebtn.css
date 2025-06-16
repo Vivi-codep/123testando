@@ -1,0 +1,25 @@
+.botao-laranja {
+    background: linear-gradient(135deg, #FCAD0B, #FCAD0B);
+    color: #fff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.5px;
+  }
+  
+  .botao-laranja:hover {
+    background: linear-gradient(135deg, #FCAD0B, #FCAD0B);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .botao-laranja:active {
+    transform: scale(0.97);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }

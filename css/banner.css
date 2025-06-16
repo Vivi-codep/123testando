@@ -12,7 +12,10 @@ body {
     margin-top: 60px;
     width: 100%;
     padding: 0 20px;
+<<<<<<< HEAD
     
+=======
+>>>>>>> 9020cb0452aebaf179201f29d552e8adb505b061
   }
   
   .visao h2 {
@@ -22,7 +25,11 @@ body {
   }
   
   /* Container retangular */
+<<<<<<< HEAD
   .card1 {
+=======
+  .card {
+>>>>>>> 9020cb0452aebaf179201f29d552e8adb505b061
     background-color: #dcdcdc;
     width: 100%;
     max-width: 700px;
@@ -31,11 +38,18 @@ body {
     padding: 20px;
     box-sizing: border-box;
     box-shadow: 0 0 8px rgba(0,0,0,0.1); /* opcional: leve sombra */
+<<<<<<< HEAD
     border-radius: 35px;
   }
   
   /* Imagem controlada */
   .card1 img {
+=======
+  }
+  
+  /* Imagem controlada */
+  .card img {
+>>>>>>> 9020cb0452aebaf179201f29d552e8adb505b061
     width: 100%;
     max-width: 100%;
     height: 200px;
@@ -46,7 +60,11 @@ body {
   }
   
   /* Texto dentro do card */
+<<<<<<< HEAD
   .card1 p {
+=======
+  .card p {
+>>>>>>> 9020cb0452aebaf179201f29d552e8adb505b061
     font-size: 16px;
     color: #333;
     text-align: justify;
