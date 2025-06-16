@@ -183,7 +183,8 @@ body {
   display: flex;
   max-width: 500px;
   margin: 0 1rem;
-   font-size: var(--fs-8);
+  font-size: var(--fs-8);
+  margin-left: 350px;
 }
 
 .search-bar input {
@@ -192,6 +193,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 20px 0 0 20px;
   font-size: 50%;
+  padding-left: 20px;
 }
 
 .search-bar button {
@@ -274,27 +276,32 @@ body {
   gap: 10px;
 }
 
-.btn {
-  position: relative;
-  border-radius: 10px;
-  background: var(--gradient);
-  color: var(--secondary);
-  font-size: var(--fs-f8);
-  font-weight: var(--weight-semibold);
-  max-width: 120px;
-  height: 50px;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  padding-inline: 30px;
-  clip-path: var(--clip-path-3);
-  margin-right: 70px;
+.botao-laranja {
+  background: linear-gradient(135deg, #FCAD0B, #FCAD0B);
+  color: #fff;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'Segoe UI', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.5px;
 }
 
-.btn:hover {
-  transform: scale(1.05);
-  color: var(--white);
+.botao-laranja:hover {
+  background: linear-gradient(135deg, #FCAD0B, #FCAD0B);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+.botao-laranja:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 /*carrosel*/
 
