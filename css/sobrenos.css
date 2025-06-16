@@ -320,11 +320,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-<<<<<<< HEAD
     color: var(--white);
-=======
-    color: var(--backgroun);
->>>>>>> 9020cb0452aebaf179201f29d552e8adb505b061
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
@@ -450,16 +446,11 @@ body {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    padding-top: 20px ;
 }
 
 .card {
     width: 250px;
-<<<<<<< HEAD
     background-color: var(--background);
-=======
-    background-color: var(--secondary);
->>>>>>> 9020cb0452aebaf179201f29d552e8adb505b061
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.5s;
@@ -483,7 +474,6 @@ body {
 .card p {
     color: #555;
 }
-<<<<<<< HEAD
 
 .visao {
   text-align: center;
@@ -537,18 +527,6 @@ body {
 }
 
 
-=======
-.missao{
-  display: flex;
-  justify-content: center;  
-  align-items: flex-start;
-  gap: 100px;
-  max-width: 1200px;         
-  margin: 0 auto;            
-  padding: 20px;
-}
-
->>>>>>> 9020cb0452aebaf179201f29d552e8adb505b061
 /* Footer */
 footer {
   background-color: var(--secondary);
