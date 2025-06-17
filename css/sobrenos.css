@@ -191,7 +191,7 @@ body {
   transition: width 0.4s ease;
   flex-shrink: 0;
   overflow: hidden; /* Garante que nada ultrapasse */
-  margin-left: 250px;
+  margin-left: 50px;
 }
 
 /* Quando focada, a barra expande suavemente */
