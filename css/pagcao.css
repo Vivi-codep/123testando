@@ -179,7 +179,7 @@ body {
   flex-shrink: 0;
   overflow: hidden;
   /* Garante que nada ultrapasse */
-  margin-left: 250px;
+  margin-left: 500px;
 }
 
 /* Quando focada, a barra expande suavemente */
@@ -552,6 +552,21 @@ footer .container a:hover {
     .search-btn {
         display: none;
     }*/
+
+    .search-container{
+      margin-left: 250px;
+    }
+  
+
+    .sidebar {
+      width: 250px;
+      background-color: var(--white);
+      padding: 20px;
+      border-radius: var(--radius-5);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-right: 20px;
+      top: -250px;
+    } 
 
   .navbar-list .navbar-link {
     font-size: 14px;

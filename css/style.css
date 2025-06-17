@@ -191,7 +191,7 @@ body {
   flex-shrink: 0;
   overflow: hidden;
   /* Garante que nada ultrapasse */
-  margin-left: 250px;
+  margin-left: 500px;
 }
 
 /* Quando focada, a barra expande suavemente */
@@ -774,6 +774,10 @@ footer .container a:hover {
 
   .header .logo img {
     width: 100px;
+  }
+
+  .search-container{
+    margin-left: 250px;
   }
 
   .container {
