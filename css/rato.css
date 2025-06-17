@@ -167,6 +167,7 @@ body {
 }
 
 /* Barra de pesquisa compacta inicialmente */
+
 .search-container {
   position: relative;
   width: 50px; /* Começa menor */
@@ -182,6 +183,7 @@ body {
 }
 
 /* Quando focada, a barra expande suavemente */
+
 .search-container:focus-within {
   width: 280px; /* Expande mais */
 }
@@ -200,6 +202,7 @@ body {
 }
 
 /* Ícone de lupa à esquerda */
+
 .search-icon {
   position: absolute;
   left: 12px;
@@ -209,6 +212,7 @@ body {
 }
 
 /* Botão com ícone de patinha à direita */
+
 .search-btn {
   position: absolute;
   right: 5px;
@@ -227,6 +231,7 @@ body {
 }
 
 /* Efeito hover no botão */
+
 .search-btn:hover {
   background-image: var(--gradient); /* exemplo: linear-gradient(...) */
 }
