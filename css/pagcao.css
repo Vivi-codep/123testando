@@ -293,28 +293,6 @@ body {
   gap: 10px;
 }
 
-.btn {
-  position: relative;
-  border-radius: 10px;
-  background: var(--gradient);
-  color: var(--secondary);
-  font-size: var(--fs-f8);
-  font-weight: var(--weight-semibold);
-  max-width: 120px;
-  height: 50px;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  padding-inline: 30px;
-  clip-path: var(--clip-path-3);
-  margin-right: 70px;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-  color: var(--white);
-}
-
 .botao-laranja {
   background: linear-gradient(135deg, #FCAD0B, #FCAD0B);
   color: #fff;
