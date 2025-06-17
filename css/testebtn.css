@@ -23,3 +23,35 @@
     transform: scale(0.97);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
+
+  /*media*/
+
+  @media (max-width: 480px) {
+  .register-box {
+    padding: 30px 20px;
+    border-radius: 15px;
+  }
+
+  .register-box h2 {
+    font-size: 20px;
+  }
+
+  form label {
+    font-size: 14px;
+  }
+
+  form input {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  form button {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .login-link {
+    font-size: 13px;
+  }
+}
+

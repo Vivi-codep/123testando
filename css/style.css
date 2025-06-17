@@ -875,8 +875,20 @@ footer .container a:hover {
     display: none;
   }
 
-  .nav-toggle-btn {
-    display: flex;
+ .botao-laranja {
+    background: linear-gradient(135deg, #FCAD0B, #FCAD0B);
+    color: #fff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.5px;
+    margin-left: 300px;
   }
 
   .container {
@@ -969,8 +981,24 @@ footer .container a:hover {
   }
 }
 
-@media (max-width: 412px){
-  
+@media (max-width: 425px) {
+
+  .botao-laranja {
+    background: linear-gradient(135deg, #FCAD0B, #FCAD0B);
+    color: #fff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.5px;
+    margin-left: 100px;
+  }
+
   .sobre-ohmydog .texto-sobre {
     text-align: left;
     font-size: 1.1rem;
@@ -980,10 +1008,15 @@ footer .container a:hover {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
 
+  .btn,
   .botao-laranja {
-    display: none;
+    width: 100%;
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+    margin: 10px 0;
   }
 
   .sobre-grid {
@@ -1013,7 +1046,7 @@ footer .container a:hover {
   }
 
   .sustentaveis h2 {
-   justify-items: center ;
+    justify-items: center;
   }
 
   .sobre-ohmydog .texto-sobre {

@@ -2,9 +2,9 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*--------------VARIAVEIS----------------*/
@@ -12,7 +12,7 @@
 :root {
 
   /* COLOR */
-  
+
   --background: #E7E9EC;
   --primary: #E7E9EC;
   --secondary: #FCAD0B;
@@ -25,131 +25,129 @@
   --gradient: linear-gradient(to right top, var(--secondary), var(--background));
   --gradient-2: linear-gradient(90deg, transparent 0%, #D10023, transparent 100%);
   --text: var(--neutrals)
-  
     /* TIPOGRAFIA */
-  
+
     --ff-opensans:"Open Sans", sans-serif;
-    --ff-petrona: "Petrona", serif;
-    --ff-original:"Original Surfer", sans-serif;
-    --ff-Pattaya: "Pattaya", sans-serif;
-    --ff-Montserrat: "Montserrat", sans-serif;
-  
-    --fs-1: 3.5rem;
-    --fs--2-: 2.4rem;
-    --fs-3: 2rem;
-    --fs-4: 1.7rem;
-    --fs-5: 1.6rem;
-    --fs-6: 1.5rem;
-    --fs-7: 1.4rem;
-    --fs-f8: 1.2rem;
-  
-    --weight-regular: 400;
-    --weight-semibold: 600;
-    --weight-bold: 700;
-  
-    /* ESPAÇO */
-  
-    --section-spacing: 60px;
-  
-    /* BORDA */
-  
-    --border: hsl(240, 45%, 17%);
-    --border-30: hsla(267, 100%, 0.3);
-  
-    /* BORDA RADIUS */
-  
-    --radius-circle: 50%;
-    --radius-5: 5px;
-    --radius-3: 3px
-  
+  --ff-petrona: "Petrona", serif;
+  --ff-original: "Original Surfer", sans-serif;
+  --ff-Pattaya: "Pattaya", sans-serif;
+  --ff-Montserrat: "Montserrat", sans-serif;
+
+  --fs-1: 3.5rem;
+  --fs--2-: 2.4rem;
+  --fs-3: 2rem;
+  --fs-4: 1.7rem;
+  --fs-5: 1.6rem;
+  --fs-6: 1.5rem;
+  --fs-7: 1.4rem;
+  --fs-f8: 1.2rem;
+
+  --weight-regular: 400;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* ESPAÇO */
+
+  --section-spacing: 60px;
+
+  /* BORDA */
+
+  --border: hsl(240, 45%, 17%);
+  --border-30: hsla(267, 100%, 0.3);
+
+  /* BORDA RADIUS */
+
+  --radius-circle: 50%;
+  --radius-5: 5px;
+  --radius-3: 3px
     /* TRANSIÇÃO */
-  
-      --transition-1: 250ms ease;
-    --transition-2: 500ms ease;
-    --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
-  
-    /* CLIP PATH */
-  
-    --clip-path-1: polygon(0 0, 100% 0, 100% 0, 0 0);
-    --clip-path-2: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    --clip-path-3: polygon(0% 0%, 90% 0, 100% 30%, 100% 100%, 0 100%);
-    --clip-path-4: polygon(90% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
-    --clip-path-5: polygon(100% 0, 100% 100%, 10% 100%, 0 60%, 0 0);
-    --clip-path-6: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
-    --clip-path-7: polygon(100% 0, 100% 60%, 90% 100%, 0 100%, 0 0);
-    --clip-path-8: polygon(0% 0%, 70% 0, 100% 30%, 100% 100%, 0 100%);
-    --clip-path-9: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  a,
-  img,
-  span,
-  input,
-  button,
-  textarea,
-  ion-icon {
-    display: block;
-  }
-  
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  img {
-    height: auto;
-  }
-  
-  input,
-  button,
-  textarea {
-    background: none;
-    border: none;
-    font: inherit;
-    /*herda da div pai*/
-  }
-  
-  input,
-  textarea {
-    width: 100%;
-  }
-  
-  ion-icon {
-    pointer-events: none;
-  }
-  
-  address {
-    font-size: 10px;
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    background-color: var(--background);
-    color: var(--text);
-    font-family: var(--ff-opensans);
-    font-size: var(--fs-4);
-    font-weight: 1.6;
-    overflow: scroll;
-  
-  }
-  
-  /*configuração barra de rolagem*/
-  ::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-color: var(--secondary);
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: var(--neutrals);
-  }
-  
+
+    --transition-1: 250ms ease;
+  --transition-2: 500ms ease;
+  --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
+
+  /* CLIP PATH */
+
+  --clip-path-1: polygon(0 0, 100% 0, 100% 0, 0 0);
+  --clip-path-2: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  --clip-path-3: polygon(0% 0%, 90% 0, 100% 30%, 100% 100%, 0 100%);
+  --clip-path-4: polygon(90% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+  --clip-path-5: polygon(100% 0, 100% 100%, 10% 100%, 0 60%, 0 0);
+  --clip-path-6: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
+  --clip-path-7: polygon(100% 0, 100% 60%, 90% 100%, 0 100%, 0 0);
+  --clip-path-8: polygon(0% 0%, 70% 0, 100% 30%, 100% 100%, 0 100%);
+  --clip-path-9: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+}
+
+li {
+  list-style: none;
+}
+
+a,
+img,
+span,
+input,
+button,
+textarea,
+ion-icon {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  background: none;
+  border: none;
+  font: inherit;
+  /*herda da div pai*/
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+address {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: var(--ff-opensans);
+  font-size: var(--fs-4);
+  font-weight: 1.6;
+  overflow: scroll;
+
+}
+
+/*configuração barra de rolagem*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--neutrals);
+}
+
 /*HEADER*/
 
 body {
@@ -182,7 +180,8 @@ body {
 
 .search-container {
   position: relative;
-  width: 50px; /* Começa menor */
+  width: 50px;
+  /* Começa menor */
   height: 40px;
   background-color: #f5f5f5;
   border-radius: 20px;
@@ -190,14 +189,15 @@ body {
   align-items: center;
   transition: width 0.4s ease;
   flex-shrink: 0;
-  overflow: hidden; 
+  overflow: hidden;
   margin-left: 250px;
 }
 
 /* Quando focada, a barra expande suavemente */
 
 .search-container:focus-within {
-  width: 280px; /* Expande mais */
+  width: 280px;
+  /* Expande mais */
 }
 
 /* Campo de entrada de texto */
@@ -231,7 +231,8 @@ body {
   right: 5px;
   width: 30px;
   height: 30px;
-  background-color: var(--secondary); /* exemplo: #B5C18E */
+  background-color: var(--secondary);
+  /* exemplo: #B5C18E */
   color: #fff;
   border-radius: 50%;
   border: none;
@@ -246,7 +247,8 @@ body {
 /* Efeito hover no botão */
 
 .search-btn:hover {
-  background-image: var(--gradient); /* exemplo: linear-gradient(...) */
+  background-image: var(--gradient);
+  /* exemplo: linear-gradient(...) */
 }
 
 .icons {
@@ -292,7 +294,7 @@ body {
   font-size: var(--fs-f8);
 }
 
-.menu :hover{
+.menu :hover {
   color: var(--secondary);
 }
 
@@ -335,115 +337,119 @@ body {
 
 /* Banner */
 .banner {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    margin-top: 20px;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-top: 20px;
 }
 
 .banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
 }
 
 .banner:hover img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .texto-banner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--white);
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .texto-banner h2 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .texto-banner p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 /* História */
 .historia {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px;
-    gap: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  gap: 60px;
 }
 
 .img-container img {
-    width: 300px;
-    border-radius: 10px;
-    transition: transform 0.8s;
+  width: 300px;
+  border-radius: 10px;
+  transition: transform 0.8s;
 }
 
 .img-container:hover img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .texto-historia {
-    max-width: 500px;
+  max-width: 500px;
 }
 
 .texto-historia h3 {
-    color: #888;
-    margin-bottom: 80px;
+  color: #888;
+  margin-bottom: 80px;
 }
 
 .texto-historia p {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .slogan {
-    font-weight: bold;
-    margin-top: 80px;
+  font-weight: bold;
+  margin-top: 80px;
 }
 
 /* Botões */
 .botoes {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: -70px ;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: -70px;
 }
 
 .botoes button {
-    background-color: #DCD6D0; /* cinza claro */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.3s, transform 0.3s;
+  background-color: #DCD6D0;
+  /* cinza claro */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .botoes button:hover {
-    background-color: var(--gradient); /* amarelo no hover */
-    transform: scale(1.05); /* cresce um pouquinho no hover */
+  background-color: var(--gradient);
+  /* amarelo no hover */
+  transform: scale(1.05);
+  /* cresce um pouquinho no hover */
 }
 
 .slogan {
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-    color: var(--white);
-    margin-top: 80px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--white);
+  margin-top: 80px;
 }
 
 .botoes {
   display: flex;
-  gap: 16px; /* Espaçamento entre os botões */
+  gap: 16px;
+  /* Espaçamento entre os botões */
 }
 
 .botoes button {
@@ -470,47 +476,47 @@ body {
 
 /* Valores */
 .valores {
-    text-align: center;
-    padding: 50px;
-  
+  text-align: center;
+  padding: 50px;
+
 }
 
 .valores h2 {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .cards {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .card {
-    width: 250px;
-    background-color: var(--background);
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.5s;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 250px;
+  background-color: var(--background);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.5s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 .card h3 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .card p {
-    color: #555;
+  color: #555;
 }
 
 .visao {
@@ -531,11 +537,14 @@ body {
 /* Container retangular */
 .card1 {
   background-color: var(--background);
-  width: 90%;              /* Aumenta a largura geral */
-  max-width: 1200px;       /* Permite que fique maior em telas grandes */
+  width: 90%;
+  /* Aumenta a largura geral */
+  max-width: 1200px;
+  /* Permite que fique maior em telas grandes */
   margin: 0 auto;
   border-radius: 20px;
-  padding: 40px;           /* Mais espaço interno */
+  padding: 40px;
+  /* Mais espaço interno */
   box-sizing: border-box;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 
@@ -621,3 +630,33 @@ body {
   padding: 0;
 }
 
+/*media*/
+
+@media (max-width: 480px) {
+  .register-box {
+    padding: 30px 20px;
+    border-radius: 15px;
+  }
+
+  .register-box h2 {
+    font-size: 20px;
+  }
+
+  form label {
+    font-size: 14px;
+  }
+
+  form input {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  form button {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .login-link {
+    font-size: 13px;
+  }
+}
